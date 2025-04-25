@@ -14,4 +14,6 @@ llm=HuggingFacePipeline.from_model_id(
 
 model=ChatHuggingFace(llm=llm)
 
-model.invoke("what is capital of india?")
+result=model.invoke("what is capital of india?")
+
+print(result)
